@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+#bg{
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1920&amp;h=600&amp;fit=crop');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+}
