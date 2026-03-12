@@ -175,9 +175,9 @@ const navbar = () => {
                         border-t border-white/20'>
 
           <Link href="/" className='py-2 rounded hover:bg-white/20'>HOME</Link>
-          <Link href="/about" className='py-2 rounded hover:bg-white/20'>ABOUT US</Link>
-          <Link href="/services" className='py-2 rounded hover:bg-white/20'>SERVICES</Link>
-          <Link href="/contact" className='py-2 rounded hover:bg-white/20'>CONTACT</Link>
+          <Link href="#about" className='py-2 rounded hover:bg-white/20'>ABOUT US</Link>
+          <Link href="#services" className='py-2 rounded hover:bg-white/20'>SERVICES</Link>
+          <Link href="#contact" className='py-2 rounded hover:bg-white/20'>CONTACT</Link>
 
           <Link
             href="/book"

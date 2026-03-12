@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "framer-motion": "^12.27.1",
     "icons": "^1.0.0",
     "lucide": "^0.577.0",

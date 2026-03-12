@@ -185,11 +185,11 @@ const Page = () => {
                 </div>
 
                 <div className="ml-auto hidden lg:flex items-center gap-4 font-bold">
-                    <Link href="#home" className="scroll-mt-24 px-3 py-2 rounded-xl hover:bg-white/20 font-sans">HOME</Link>
-                    <Link href="#about" className="px-3 py-2 rounded-xl hover:bg-white/20 font-sans">ABOUT US</Link>
-                    <Link href="#services" className="px-3 py-2 rounded-xl hover:bg-white/20 font-sans">SERVICES</Link>
-                    <Link href="#contact" className="px-3 py-2 rounded-xl hover:bg-white/20 font-sans">CONTACT</Link>
-                    <Link href="/book" className="px-4 py-2 bg-red-500 text-white rounded-xl hover:bg-red-600 font-sans">Book a Repair</Link>
+                    <Link href="/" className="scroll-mt-24 px-3 py-2 rounded-xl hover:bg-white/20 font-sans">HOME</Link>
+                    <Link href="/#about" className="px-3 py-2 rounded-xl hover:bg-white/20 font-sans">ABOUT US</Link>
+                    <Link href="/#services" className="px-3 py-2 rounded-xl hover:bg-white/20 font-sans">SERVICES</Link>
+                    <Link href="/#contact" className="px-3 py-2 rounded-xl hover:bg-white/20 font-sans">CONTACT</Link>
+                    <Link href="book" className="px-4 py-2 bg-red-500 text-white rounded-xl hover:bg-red-600 font-sans">Book a Repair</Link>
                 </div>
 
                 <button onClick={() => setOpen(!open)} className="ml-auto lg:hidden text-black">
@@ -199,10 +199,10 @@ const Page = () => {
                 {open && (
                     <div className="absolute top-16 left-0 right-0 bg-gray-400 flex flex-col gap-4 py-4 px-6 font-bold lg:hidden border-t border-white/20">
                         <Link href="/" className="py-2 rounded hover:bg-white/20 font-sans">HOME</Link>
-                        <Link href="/about" className="py-2 rounded hover:bg-white/20 font-sans">ABOUT US</Link>
-                        <Link href="/services" className="py-2 rounded hover:bg-white/20 font-sans">SERVICES</Link>
-                        <Link href="/contact" className="py-2 rounded hover:bg-white/20 font-sans">CONTACT</Link>
-                        <Link href="/book" className="py-3 bg-red-500 text-white rounded-xl hover:bg-red-600 text-center font-sans">Book a Repair</Link>
+                        <Link href="/#about" className="py-2 rounded hover:bg-white/20 font-sans">ABOUT US</Link>
+                        <Link href="/#services" className="py-2 rounded hover:bg-white/20 font-sans">SERVICES</Link>
+                        <Link href="/#contact" className="py-2 rounded hover:bg-white/20 font-sans">CONTACT</Link>
+                        <Link href="book" className="py-3 bg-red-500 text-white rounded-xl hover:bg-red-600 text-center font-sans">Book a Repair</Link>
                     </div>
                 )}
             </nav>
@@ -450,9 +450,9 @@ const Page = () => {
                     {/* Links */}
                     <div className="flex gap-6 text-sm">
                         <Link href="/">Home</Link>
-                        <Link href="/about">About</Link>
-                        <Link href="/services">Services</Link>
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/#about">About</Link>
+                        <Link href="/#services">Services</Link>
+                        <Link href="/#contact">Contact</Link>
                     </div>
 
 

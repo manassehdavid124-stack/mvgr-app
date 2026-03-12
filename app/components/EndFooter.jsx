@@ -15,10 +15,10 @@ const EndFooter = () => {
             </div>
             <div className="             lg:flex lg:flex-row lg:items-center flex flex-row text-sm lg:gap-16 \r\n  "  >
                 <Link href="/">Home</Link>
-                <Link href="/about" className='ml-4'>About Us</Link>
-                <Link href="/services" className='ml-4'>Services</Link>
-                <Link href="/contact" className='ml-4'>Contact</Link>
-                <Link href="/book" className='ml-4'>Book a Repair</Link>
+                <Link href="#about" className='ml-4'>About Us</Link>
+                <Link href="#services" className='ml-4'>Services</Link>
+                <Link href="#contact" className='ml-4'>Contact</Link>
+                <Link href="#book" className='ml-4'>Book a Repair</Link>
             </div>
 
             <div className=' flex items-center justify-center'>

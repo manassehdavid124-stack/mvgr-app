@@ -139,7 +139,7 @@ const Hero = () => {
       >
         Expert mechanical repairs, professional spray painting, and reliable
         <br className="hidden sm:block" />
-        maintenance services for Japanese, Ford, and Chevy vehicles.
+         maintenance services for all Japanese, Ford, Chevy and all american vehicles.
       </motion.p>
 
       {/* Buttons */}
