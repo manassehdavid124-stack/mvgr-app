@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
+
 
 const Body = () => {
     return (
@@ -179,7 +181,11 @@ const Body = () => {
                     </div>
                 </div>
 
+                <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
 
+                   <Image src="/img/mvgrlogo.jpeg" width={500} height={300} alt="MVGR Auto Care" className=" object-cover" />
+
+                </section>
 
 
 
@@ -192,120 +198,3 @@ const Body = () => {
 }
 export default Body
 
-// "use client";
-
-// import Link from "next/link";
-// import React from "react";
-// import { motion } from "framer-motion";
-// const fadeUp = {
-//   hidden: { opacity: 0, y: 30 },
-//   visible: { opacity: 1, y: 0 },
-// };
-
-// const staggerContainer = {
-//   hidden: {},
-//   visible: {
-//     transition: {
-//       staggerChildren: 0.15,
-//     },
-//   },
-// };
-// const Body = () => {
-//   return (
-//     <div className="flex flex-col bg-white items-center justify-center gap-6">
-
-//       {/* Section Title */}
-//       <motion.div
-//         variants={fadeUp}
-//         initial="hidden"
-//         whileInView="visible"
-//         viewport={{ once: true }}
-//         transition={{ duration: 0.6, ease: "easeOut" }}
-//         className="text-center"
-//         id="services"
-//       >
-//         <h5 className="text-2xl text-red-500 font-sans mt-20">Our Services</h5>
-//         <h1 className="lg:text-5xl text-black font-extrabold sm:text-4xl">
-//           WHAT WE OFFER
-//         </h1>
-//         <p className="text-black/50 sm:text-2xl m-5">
-//           From minor repairs to complete overhauls, we provide comprehensive automotive
-//           services with guaranteed quality and competitive pricing.
-//         </p>
-//       </motion.div>
-
-//       {/* Services Grid */}
-//       <motion.div
-//         variants={staggerContainer}
-//         initial="hidden"
-//         whileInView="visible"
-//         viewport={{ once: true }}
-//         className="lg:grid lg:grid-cols-3 sm:flex sm:flex-col"
-//       >
-//         {/** CARD */}
-//         {[
-//           "MECHANICAL REPAIRS",
-//           "SPRAY PAINTING",
-//           "MAINTENANCE SERVICES",
-//           "BODY AND PANEL BEATING WORK",
-//           "ELECTRICAL SYSTEMS",
-//           "CUSTOMER SATISFACTION",
-//         ].map((title, i) => (
-//           <motion.div
-//             key={i}
-//             variants={fadeUp}
-//             transition={{ duration: 0.5, ease: "easeOut" }}
-//             className="flex flex-col items-center justify-center gap-4 p-10 m-10 border-2 border-gray-200 rounded-lg hover:shadow-lg hover:scale-105 transition"
-//           >
-//             <h3 className="font-bold text-black text-center">{title}</h3>
-//             <p className="text-black opacity-50 text-center">
-//               Professional automotive service delivered with precision and care.
-//             </p>
-
-//             <Link
-//               href="#"
-//               className="flex items-center text-red-600 font-medium text-sm group"
-//             >
-//               Learn More
-//               <svg
-//                 xmlns="http://www.w3.org/2000/svg"
-//                 width="16"
-//                 height="16"
-//                 viewBox="0 0 24 24"
-//                 fill="none"
-//                 stroke="currentColor"
-//                 strokeWidth="2"
-//                 strokeLinecap="round"
-//                 strokeLinejoin="round"
-//                 className="ml-1 group-hover:translate-x-1 transition-transform"
-//               >
-//                 <path d="M5 12h14"></path>
-//                 <path d="m12 5 7 7-7 7"></path>
-//               </svg>
-//             </Link>
-//           </motion.div>
-//         ))}
-//       </motion.div>
-
-//       {/* Vehicle Specialization */}
-//       <motion.div
-//         variants={fadeUp}
-//         initial="hidden"
-//         whileInView="visible"
-//         viewport={{ once: true }}
-//         transition={{ duration: 0.6 }}
-//         className="text-center p-10"
-//       >
-//         <h3 className="lg:text-4xl font-bold text-black">
-//           VEHICLE SPECIALIZATION
-//         </h3>
-//         <p className="text-black/50 mt-5 mb-10">
-//           Specializing in Japanese, Ford, and Chevy vehicles.
-//         </p>
-//       </motion.div>
-
-//     </div>
-//   );
-// };
-
-// export default Body;

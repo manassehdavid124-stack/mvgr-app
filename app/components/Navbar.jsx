@@ -136,7 +136,7 @@ const navbar = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav  className="fixed top-0 left-0 right-0 z-50 \r\n                    bg-gray-400 flex items-center \r\n                    h-16 px-3 sm:px-8 md:px-10 lg:px-32">
+    <nav  className="fixed top-0 left-0 right-0 z-50 \r\n                    bg-white/70 flex items-center \r\n                    h-16 px-3 sm:px-8 md:px-10 lg:px-32">
 
 
       <div className='flex items-center gap-3'>
@@ -148,7 +148,7 @@ const navbar = () => {
         </div>
       </div>
 
-      <div className='ml-auto hidden lg:flex items-center gap-4 font-bold'>
+      <div className='ml-auto hidden lg:flex items-center gap-4 font-bold text-black/65'>
         <Link href="#Home" className='scroll-mt-24 px-3 py-2 rounded-xl hover:bg-white/20'>HOME</Link>
         <Link href="#about" className='px-3 py-2 rounded-xl hover:bg-white/20'>ABOUT US</Link>
         <Link href="#services" className='px-3 py-2 rounded-xl hover:bg-white/20'>SERVICES</Link>
